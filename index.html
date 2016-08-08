@@ -106,14 +106,67 @@
               <p>Большинство едет в Гранд Каньон и толпится там</p>
             </div>
           </div>
+      </div>
 
-
-
+        <div class="feedback">
+          <div class="feedback-tip">
+            <h3>Заинтересовались</h3>
+            <p class="feedback-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предположения гостиниц в Седоне</p>
           </div>
+
+          <div class="form-title">
+              <h3>Поиск гостиницы в Седоне</h3>
+          </div>
+
+          <form class="feedback-form" action="/hotels" method="post">
+              <div class="feedback-form-group">
+                <label for="arrival-date">Дата заезда:</label>
+                  <input type="date"  name="arrival-date" id="arrival-date">
+
+                <label for="date-of-departure">Дата выезда:</label>
+                  <input type="date"  name="date-of-departure" id="date-of-departure">
+
+                <label for="date-of-departure">Дата выезда:</label>
+                  <input type="date"  name="date-of-departure" id="date-of-departure">
+
+                <div class="visitor-category">
+                    <label for="adults-count">Взрослые:</label>
+                      <span class="button-minus">Минус</span>
+                      <input type="number"  name="adults-count" id="adults-count" value="2">
+                      <span class="button-plus">Плюс</span>
+                </div>
+
+                <div class="visitor-category">
+                      <label for="сhild-count">Дети:</label>
+                        <span class="button-minus">Минус</span>
+                        <input type="number"  name="сhild-count" id="сhild-count" value="0">
+                        <span class="button-plus">Плюс</span>
+                </div>
+
+              </div>
+              <input type="submit" class="search-button" value="Найти">
+           </form>
+
+         </div>
+
+         <div class="footer">
+          <div class="footer-col1">
+            <p>#visitsedona</p>
+          </div>
+
+          <div class="footer-col2">
+            <div class="social-buttons">
+            <a class="social-button social-btn-twt" href="#">Twitter</a>
+            <a class="social-button social-btn-fb" href="#">Facebook</a>
+            <a class="social-button social-btn-yt" href="#">YouTube</a>
+            </div>
+          </div>
+
+          <div class="footer-col3">
+            <span class="htmlacademy">VisitHtmlacademy</span>
+          </div>
+
         </div>
-
-
-
 
 
   </body>

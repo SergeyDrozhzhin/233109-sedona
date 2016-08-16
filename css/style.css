@@ -1,0 +1,27 @@
+h1 {
+font-size:21px;
+line-height: 26px;
+color: #000000;
+font-weight: bold;
+font-family: PTSans;
+
+}
+
+h2 {
+  font-size:21px;
+  line-height: 21px;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: PTSans;
+
+}
+
+body{
+  font-size:14px;
+  line-height: 21px;
+  color: #333333;
+  font-weight: bold;
+  font-family: PTSans;
+
+
+}

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link href="/css/style.css" rel="stylesheet">
-    <title>HTML Academy: Седона</title>
+    <title>Седона</title>
   </head>
   <body>
     <div class="container">
@@ -28,7 +28,7 @@
       </header>
       <main>
         <div class="promo">
-          <h1>Седона-небольшой городок в Аризоне, заслуживающий большего!</h1><br>
+          <h1>Седона-небольшой городок в Аризоне, заслуживающий большего!</h1>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
         <div class="features">
@@ -58,7 +58,7 @@
           </div>
           <div class="features-row">
             <div class="feature-image">
-              <img src="img/img2.jpg" alt="" width="800" height="400">
+              <img src="img/img2.jpg" alt="Седона-Горы" width="800" height="400">
             </div>
             <div class="feature-item item-blue">
               <h2>Там есть мост дьявола</h2>
@@ -86,10 +86,12 @@
         </div>
         <div class="hotel-search">
           <div class="hotel-search-description">
-            <p><strong>Заинтересовались?</strong>
-            Укажите предполагаемые даты поездки, и мы покажем вам лучшие предположения гостиниц в Седоне</p>
-            </div>
-            <a href="#">Поиск гостиницы в Седоне</a>
+            <p>
+              <strong>Заинтересовались?</strong>
+            Укажите предполагаемые даты поездки, и мы покажем вам лучшие предположения гостиниц в Седоне
+            </p>
+          </div>
+          <a href="#">Поиск гостиницы в Седоне</a>
         </div>
       </main>
       <footer>
@@ -102,37 +104,45 @@
           <a class="social-btn social-btn-yt" href="#">YouTube</a>
         </div>
         <div class="footer-copyright">
-          <p><a href="#">WEBSITE BY</a>
-          <img src="img/htmlacademy.png" alt="htmalacademy" width="113" height="39">
+            <p>WEBSITE BY</p>
+            <a href="#">
+              <img src="img/htmlacademy.png" alt="htmalacademy" width="113" height="39">
+            </a>
         </div>
       </footer>
     </div>
     <div class="modal">
       <form class="search-form" action="/hotels" method="post">
         <div class="search-form-group">
-          <label for="arrival-date">Дата заезда:</label>
-          <input type="text"  name="arrival-date" id="arrival-date">
-          <label for="date-of-departure">Дата выезда:</label>
-          <input type="text"  name="date-of-departure" id="date-of-departure">
-          <span class="calendar">Календарь</span>
-          <label for="date-of-departure">Дата выезда:</label>
-          <input type="text"  name="date-of-departure" id="date-of-departure">
-          <span class="calendar">Календарь</span>
-          <div class="visitor-category">
-            <label for="adults-count">Взрослые:</label>
-            <span class="button-minus">Минус</span>
-            <input type="number"  name="adults-count" id="adults-count" value="2">
-            <span class="button-plus">Плюс</span>
+          <div class="arrival-date-field">
+            <label for="arrival-date">Дата заезда:</label>
+            <input type="text"  name="arrival-date" id="arrival-date">
+            <span class="calendar">Календарь</span>
           </div>
-          <div class="visitor-category">
-            <label for="сhild-count">Дети:</label>
-            <span class="button-minus">Минус</span>
-            <input type="number"  name="сhild-count" id="сhild-count" value="0">
-            <span class="button-plus">Плюс</span>
+          <div class="date-of-departure-field">
+            <label for="date-of-departure">Дата выезда:</label>
+            <input type="text"  name="date-of-departure" id="date-of-departure">
+            <span class="calendar">Календарь</span>
+          </div>
+          <div class="visitor-category-field">
+            <div class="adults-count-field">
+              <label for="adults-count">Взрослые:</label>
+              <span class="button-minus">Минус</span>
+              <input type="number"  name="adults-count" id="adults-count" value="2">
+              <span class="button-plus">Плюс</span>
+            </div>
+          </div>
+          <div class="visitor-category-field">
+            <div class="child-count-field">
+              <label for="сhild-count">Дети:</label>
+              <span class="button-minus">Минус</span>
+              <input type="number"  name="сhild-count" id="сhild-count" value="0">
+              <span class="button-plus">Плюс</span>
+            </div>
           </div>
         </div>
         <input type="submit" class="search-button" value="Найти">
       </form>
     </div>
-   </body>
+  </body>
 </html>

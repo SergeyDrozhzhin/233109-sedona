@@ -6,6 +6,8 @@ body {
   color: #333333;
   font-weight: normal;
   font-family: "PT Sans", "Arial", sans-serif;
+  background: url("../img/sedona-index-1200.jpg") no-repeat 50% 3px;
+  background-size: 1200px auto;
   margin: 0;
   padding: 0;
 
@@ -70,7 +72,7 @@ h2 {
   padding-bottom: 36px;
 }
 
-.footer-hashtag,
+.footer-hashtag, 
 .footer-social-buttons{
   width: 400px;
   float: left;
@@ -78,8 +80,8 @@ h2 {
 
 .footer-copyright{
   width: 400px;
-  float: right;
-}
+  float: right; 
+} 
 
 .left-col{
   float: left;
@@ -92,8 +94,7 @@ h2 {
 /*index.html*/
 .header-img {
   width:1200px;
-  height: 567px;
-  background: url("../img/index_img.jpg") no-repeat;
+  height: 510px;
 }
 
 .promo {
@@ -133,10 +134,11 @@ h2 {
   padding-top: 57px;
   padding-bottom: 58px;
   float: left;
-
+  background-color: red;
 }
 
 .feature-image {
+  background: green ;
   background-size: 800px 255px;
   float: left;
   padding: 0px;
@@ -151,7 +153,7 @@ h2 {
   padding-right: 73px;
   padding-left: 72px;
   float: left;
-
+  background-color: rgba(255, 0, 0, 0.5);
 }
 
 .item-grey{
@@ -161,6 +163,7 @@ h2 {
   padding-bottom: 57px;
   padding-right: 87px;
   padding-left: 88px;
+  background-color: rgba(134, 0, 0, 0.5);
   float: left;
 }
 
@@ -209,21 +212,19 @@ h2 {
 }
 
 .adults-count-field {
-  width: 230px;
+  width: 230px; 
   float: left;
 }
 
 .child-count-field {
-  width: 230px;
+  width: 230px; 
   float: right;
 }
 
 /*catalog.html*/
-.hotel-filter {
-  background: url("../img/filter-bg.jpg")
-}
+
 .sorting-field li{
-  display: inline-block;
+  display: inline-block;  
 }
 
 .filter-result-output-value {

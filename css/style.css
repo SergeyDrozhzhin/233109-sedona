@@ -3,7 +3,12 @@ body {
   line-height: 21px;
   color: #333333;
   font-weight: normal;
-  font-family: "PT Sans", "Open Sans", "PT Sans Narrow", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
+  background: url("../img/sedona-index-1200.jpg") no-repeat 50% 3px;
+  background-size: 1200px auto;
+  margin: 0;
+  padding: 0;
+
 }
 h1 {
   font-size: 21px;
@@ -16,4 +21,134 @@ h2 {
   line-height: 21px;
   color: #ffffff;
   font-weight: bold;
+}
+.container {
+  width: 1200px;
+  margin: 0px auto;
+  padding:0 10px;
+}
+
+.nav {
+  width:1200px;
+  min-height: 56px;
+
+}
+.left-nav, .right-nav{
+  float: left;
+  width: 480;
+  padding:0px;
+}
+
+.right-nav{
+  float: right;
+  width: 480;
+  padding:0px;
+}
+.header-logo{
+  width:140px;
+  float: left;
+  margin-left: 50px;
+  margin-right: auto;
+}
+
+.header-logo img{
+  width:140px;
+  height:70px;
+  float: left;
+}
+
+.left-nav li, .right-nav li{
+  display: inline-block;
+  width:240px;
+  text-align: center;
+}
+
+.header-img {
+width:1200px;
+height: 510px;
+}
+
+.promo {
+  width: 500px;
+  padding-left: 350px;
+  padding-right: 350px;
+  padding-top: 56px;
+
+}
+
+.promo h1 {
+  margin-left:0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.promo p{
+  margin-left:0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 58px;
+  text-align: center;
+
+}
+
+.feature-item {
+
+
+
+
+}
+
+.feature-item h2,
+.feature-item,p {
+  text-align: center;
+}
+
+.item-blue {
+  width: 275px;
+  height: 140px;
+  padding-right: 63px;
+  padding-left: 62px;
+  padding-top: 57px;
+  padding-bottom: 58px;
+  float: left;
+  background-color: red;
+}
+
+.feature-image {
+  background: green ;
+  background-size: 800px 255px;
+  float: left;
+  padding: 0px;
+  height: 255px;
+
+}
+
+.item-white {
+  width: 255px;
+  height: 200px;
+  padding-top: 65px;
+  padding-bottom: 65px;
+  padding-right: 73px;
+  padding-left: 72px;
+  float: left;
+  background-color: rgba(255, 0, 0, 0.5);
+
+}
+
+.item-grey{
+  width: 225px;
+  height: 140px;
+  padding-top: 58px;
+  padding-bottom: 57px;
+  padding-right: 87px;
+  padding-left: 88px;
+  background-color: rgba(134, 0, 0, 0.5);
+  float: left;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }

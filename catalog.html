@@ -9,27 +9,27 @@
   <div class="container">
     <header class="page-header">
       <div class="header-top">
-        <div class="nav clearfix">
-          <ul class="left-nav">
-            <li><a href="index.html">Информация</a></li>
-            <li><a href="#">Фото и видео</a></li>
+        <div class="main-nav clearfix">
+          <ul class="main-nav-list main-nav-left">
+            <li class="main-nav-item"><a href="index.html">Информация</a></li>
+            <li class="main-nav-item"><a href="#">Фото и видео</a></li>
           </ul>
           <div class="header-logo">
             <a href="index.html">
               <img src="img/logo.png" alt="Sedona" width="120" height="50">
             </a>
           </div>
-          <ul class="right-nav">
-            <li><a href="#">Карта штата</a></li>
-            <li><a href="/catalog.html">Гостиницы</a></li>
+          <ul class="main-nav-list main-nav-right">
+            <li class="main-nav-item"><a href="#">Карта штата</a></li>
+            <li class="main-nav-item"><a href="/catalog.html">Гостиницы</a></li>
           </ul>
         </div>
       </div>
     </header>
     <main>
-      <div class="hotel-filter clearfix">
-        <form class="filter" action="/" method="post">
-          <div class="infrustructure left-col">
+      <div class="hotel-filter">
+        <form class="filter clearfix" action="/" method="post">
+          <div class="filter-item-infrastructure">
             <h3 class="hotel-filter-block-title">Инфраструктура:</h3>
             <div class="waterpool-item">
              <input type="checkbox" name="waterpool" id="waterpool" value="waterpool-chbox" checked>
@@ -44,7 +44,7 @@
              <label for="wifi">Wi-Fi</label>
            </div>
          </div>
-         <div class="house-type left-col">
+         <div class="filter-item-house-type">
            <h3 class="hotel-filter-block-title">Тип жилья:</h3>
            <div class="hotel-item">
              <input type="checkbox" name="hotel" id="hotel" value="hotel-chbox" checked>
@@ -67,7 +67,7 @@
     </div>
     <div class="filter-result">
       <div class="filter-result-header">
-        <p class="filter-result-output-value">Найдено:3</p>
+        <p class="filter-result-number">Найдено:3</p>
         <div class="sorting-field clearfix">
           <h4 class="sorting-field-title left-col">Сортировка</h4>
           <ul class="sorting-field left-col">
@@ -84,7 +84,7 @@
     <div class="filter-result-content">
       <div class="filter-result-item clearfix">
         <div class="result-left-column left-col clearfix">
-          <div class="hotel-img left-col">
+          <div class="filter-result-img left-col">
             <a href="#">
               <img src="img/hotel.png" width="135" height="90" alt="Amara Resort & SPA">
             </a>
@@ -100,18 +100,18 @@
           </div>
         </div>
         <div class="result-right-column right-col">
-          <ul class="raiting-stars-icons">
+          <ul class="rating-stars-icons">
             <li><span class="star-icon">star</span></li>
             <li><span class="star-icon">star</span></li>
             <li><span class="star-icon">star</span></li>
             <li><span class="star-icon">star</span></li>
-            <li><p class="raiting-value">Рейтинг: 8,5</p></li>
           </ul>
+          <p class="rating-value">Рейтинг: 8,5</p>
         </div>
       </div>
       <div class="filter-result-item clearfix">
-        <div class="result-left-column left-col clearfix">
-          <div class="hotel-img left-col">
+        <div class="result-left-column clearfix">
+          <div class="filter-result-img left-col">
             <a href="#">
               <img src="img/motel.png" width="135" height="90" alt="Desert Quail Inn">
             </a>
@@ -127,16 +127,16 @@
           </div>
         </div>
         <div class="result-right-column right-col">
-          <ul class="raiting-stars-icons">
+          <ul class="rating-stars-icons">
             <li><span class="star-icon">star</span></li>
             <li><span class="star-icon">star</span></li>
-            <li><p class="raiting-value">Рейтинг: 8,9</p></li>
           </ul>
+            <p class="rating-value">Рейтинг: 8,9</p>
         </div>
       </div>
       <div class="filter-result-item clearfix">
         <div class="result-left-column left-col clearfix">
-          <div class="hotel-img left-col">
+          <div class="filter-result-img left-col">
             <a href="#">
               <img src="img/apartments.png" width="135" height="90" alt="Villas at Poco Diablo">
             </a>
@@ -152,27 +152,27 @@
           </div>
         </div>
         <div class="result-right-column right-col">
-          <ul class="raiting-stars-icons">
+          <ul class="rating-stars-icons">
             <li><span class="star-icon">star</span></li>
             <li><span class="star-icon">star</span></li>
             <li><span class="star-icon">star</span></li>
-            <li><p class="raiting-value">Рейтинг: 9,2</p></li>
           </ul>
+          <p class="raiting-value">Рейтинг: 9,2</p>
         </div>
       </div>
     </div>
   </div>
 </main>
 <footer class="clearfix">
-  <div class="footer-hashtag">
+  <div class="footer-item footer-hashtag">
     <p>#visitsedona</p>
   </div>
-  <div class="social-buttons">
+  <div class="footer-item social-buttons">
     <a class="social-btn social-btn-twt" href="#">Twitter</a>
     <a class="social-btn social-btn-fb" href="#">Facebook</a>
     <a class="social-btn social-btn-yt" href="#">YouTube</a>
   </div>
-  <div class="footer-copyright">
+  <div class="footer-item footer-copyright">
     <p><a href="#">WEBSITE BY</a>
       <img src="img/htmlacademy.png" alt="htmalacademy" width="113" height="39">
     </div>

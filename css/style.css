@@ -1,11 +1,15 @@
 /*common*/
 
 body {
+  min-width: 1200px;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 26px;
   color: #333333;
-  font-weight: normal;
+  font-weight: 400;
   font-family: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #f2f2f2;
   margin: 0;
   padding: 0;
 
@@ -28,6 +32,10 @@ h2 {
   padding: 0 10px;
 }
 
+.page-header {
+  background-color: #ffffff;
+}
+
 .main-nav {
   width: 100%;
 }
@@ -35,6 +43,37 @@ h2 {
 .main-nav-list{
   width: 480px;
   padding: 0px;
+  margin: 0px;
+  list-style: none;
+    font-size: 0;
+
+}
+
+.main-nav-list .main-nav-item {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 26px;
+  vertical-align: top;
+  width: 240px;
+  text-align: center;
+
+}
+
+.main-nav-list .main-nav-item a {
+  display: block;
+  padding-top: 15px;
+  padding-bottom:15px;
+  text-decoration: none;
+  color: #333333;
+  font-weight: 700;
+}
+
+.main-nav-list .main-nav-item a:hover {
+  color:#81b3d2;
+}
+
+.main-nav-list .main-nav-item a:active {
+  color:#766357;
 }
 
 .main-nav-left{
@@ -49,18 +88,19 @@ h2 {
   width: 140px;
   height: 56px;
   float: left;
+
 }
 
 .header-logo img{
  width:100%;
  height:auto;
+ margin-top: 0;
+ margin-bottom:0;
+ margin-left: 50%;
+ margin-right: 50%;
  }
 
-.main-nav-list .main-nav-item {
-  display: inline-block;
-  width: 240px;
-  text-align: center;
-}
+
 
 .footer{
   padding-top: 36px;

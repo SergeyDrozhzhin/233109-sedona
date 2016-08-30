@@ -564,11 +564,28 @@ margin-bottom: 27px;
 
 /*catalog.html*/
 
-.filter-item-infrastructure {
+.filter-item {
 width: 300px;
 float: left;
+padding-top: 10px;
+padding-bottom: 10px;
+
+
 }
 
+.filter-item label {
+  color: #ffffff;
+  text-align: left;
+
+}
+
+.hotel-filter-block-title {
+  color: #ffffff;
+  line-height: 21px;
+  text-align: left;
+  padding-left: 70px;
+
+}
 .filter-item-house-type {
   width: 300px;
   float: left;
@@ -577,35 +594,206 @@ float: left;
 .hotel-filter {
   background: url("../img/filter-bg.jpg") repeat;
 }
-.sorting-field li{
-  display: inline-block;
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label {
+  display: block;
+  margin: 20px 0;
+  position: relative;
+  cursor: pointer;
+  padding-left: 109px;
+}
+
+input[type="checkbox"] + label::before {
+  content:"";
+  position: absolute;
+  top: 2px;
+  left: 70px;
+  width: 22px;
+  height:22px;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -196px -10px;
+}
+
+
+input[type="checkbox"]:checked + label::after {
+  content:"";
+  position: absolute;
+  top: 2px;
+  left: 70px;
+  width: 26px;
+  height:22px;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -238px -10px;
+}
+
+
+
+.filter-result {
+  display: block;
+
+}
+
+.filter-result-header{
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .filter-result-number {
   float: left;
-  width: 115px;
+  margin: 0px;
+  padding-left: 70px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.sorting-field {
+  margin: 0px;
+  padding: 0px;
+}
+
+.sorting-field li{
+  display: inline-block;
+  padding-top: 29px;
+  padding-right: 30px;
+
+  }
+
+.sorting-field-title {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+  margin: 0px;
+  margin-left: 44px;
+  padding-top: 34px;
+  padding-right: 30px;
+  padding-bottom: 34px;
+
+}
+
+.sorting-item {
+  text-align: left;
+  border-bottom: 1px dotted #a3c7de;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #bfbfbf;
+
+}
+
+.sorting-item:hover {
+  color: #a3c7de;
+}
+
+.sorting-item:active {
+  color: #000000;
+  border: none;
+
+}
+
+.sorting-field .active {
+  color: #81b3d2;
+  border: none;
+  position: relative;
+}
+
+.sorting-arrows-field {
+  margin:0px;
+  padding-right: 70px;
+}
+
+.sorting-arrow {
+  display: block;
+  font-size: 0px;
+  width: 11px;
+  height: 10px;
+  margin-top: 38px;
+  background: url("../img/sprite.png") no-repeat center;
+
+}
+
+.sorting-arrows-field li {
+  padding: 0px;
+  margin: 0px;
+}
+
+ .arrow-up {
+  background-position: -134px -10px;
+  top: 5px;
+  left: 5px;
+  padding-right: 10px;
+}
+
+.arrow-up:hover {
+  background-position:  -165px -10px;
+}
+
+.arrow-up:active {
+  background-position: -103px -10px;
+}
+
+.sorting-arrows-field .active {
+  background-position: -41px -10px;
+}
+
+.arrow-down {
+  background-position: -41px -10px;
+
+}
+
+.arrow-down:hover {
+  background-position: -41px -10px;
 }
 
 .filter-result-item {
-  padding-top: 29px;
-  padding-bottom: 29px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.result-left-column {
+  float: left;
+  position: relative;
+
+  padding-top: 30px;
+  padding-left: 70px;
+  padding-bottom: 30px;
+
 }
 
 .filter-result-img {
-  display: block;
-  width: 100%;
+
+  float: left;
   height: auto;
+
 }
 
 .hotel-item {
-  width: 260px;
+
+}
+
+.hotel-item-name {
+
+text-decoration: none;
+color: #000000;
+font-size: 21px;
+line-height: 26px;
 }
 
 .result-right-column {
   width: 120px;
 }
 
-.result-left-column {
-  width: 500px;
-  float: left;
+.rating-stars-icons {
+  display: inline-block;
+  list-style: none;
+
 }

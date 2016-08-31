@@ -808,14 +808,18 @@ height: 90px;
 .result-right-column {
     float: right;
     width: 220px;
+    margin-top: 26px;
 }
 
 .rating-stars-icons li {
     display: inline-block;
     list-style: none;
+    
+
 }
 
 .rating-stars-icons {
+    margin-top: 0px;
     padding: 0;
     padding-right: 64px;
     text-align: right;

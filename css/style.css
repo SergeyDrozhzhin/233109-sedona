@@ -70,6 +70,8 @@ h2 {
     color: #000;
 }
 
+.main-nav-item a:nth-child(1) {}
+
 .main-nav-item a:hover {
     color: #81b3d2;
 }
@@ -114,8 +116,8 @@ h2 {
 
 .footer-area {
     width: 100%;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 26px;
+    padding-bottom: 27px;
     background-color: #ffffff;
 }
 
@@ -206,13 +208,13 @@ h2 {
 /*index.html*/
 .header-intro {
     width: 100%;
-    height: 567px;
+    height: 511px;
     background: #81b3d2 url("../img/header_bg.jpg") no-repeat;
 }
 
 .promo {
     width: 500px;
-    padding-top: 56px;
+    padding-top: 58px;
     padding-right: 350px;
     padding-left: 350px;
     background-color: white;
@@ -220,7 +222,7 @@ h2 {
 
 .promo-header {
     margin: 0;
-    padding-bottom: 40px;
+    padding-bottom: 27px;
     text-align: center;
     font-size: 21px;
     line-height: 26px;
@@ -228,18 +230,19 @@ h2 {
 
 .promo-text {
     margin: 0;
-    margin-bottom: 56px;
+    margin-bottom: 51px;
     text-align: center;
     font-size: 14px;
     line-height: 26px;
     font-weight: 400;
+    letter-spacing: 0.1px;
     color: #333;
 }
 
 .feature-item {
     float: left;
     width: 275px;
-    padding-top: 57px;
+    padding-top: 55px;
     padding-right: 63px;
     padding-left: 62px;
     text-align: center;
@@ -250,7 +253,7 @@ h2 {
     position: relative;
     width: 160px;
     margin: 0;
-    margin-bottom: 27px;
+    margin-bottom: 23px;
     padding-right: 57px;
     padding-left: 57px;
     font-size: 21px;
@@ -260,7 +263,7 @@ h2 {
 
 .feature-number {
     display: block;
-    margin-bottom: 14px;
+    margin-bottom: 21px;
     color: white;
     font-size: 14px;
     font-weight: 400;
@@ -268,8 +271,11 @@ h2 {
 }
 
 .feature-item-description {
+    width: 277px;
     margin: 0;
-    padding-bottom: 42px;
+    padding-bottom: 51px;
+    font-size: 14px;
+    line-height: 21px;
     color: white;
 }
 
@@ -290,57 +296,67 @@ h2 {
     background-color: #81b3d2;
 }
 
+.item-blue .feature-item-description {
+
+}
+
 .item-blue .feature-item-name {
     color: #fff;
 }
 
 .item-white {
     padding-top: 163px;
-    padding-bottom: 33px;
+    padding-bottom: 31px;
     background-color: #fff;
 }
 
 .house-item::before{
     content: "";
-    position: absolute; 
+    position: absolute;
     width: 72px;
-    height: 75px; 
+    height: 75px;
     left: 100px;
-    bottom: 47px; 
-    background: url("../img/house-icon.png") no-repeat; 
+    bottom: 47px;
+    background: url("../img/house-icon.png") no-repeat;
 }
 
 .food-item::before {
     content: "";
-    position: absolute; 
+    position: absolute;
     width: 72px;
-    height: 75px; 
+    height: 75px;
     left: 100px;
-    bottom: 47px; 
-    background: url("../img/food-icon.png") no-repeat; 
+    bottom: 47px;
+    background: url("../img/food-icon.png") no-repeat;
 }
 
 .souvenirs-item::before {
     content: "";
-    position: absolute; 
+    position: absolute;
     width: 72px;
-    height: 75px; 
-    left: 100px;
-    bottom: 47px; 
+    height: 75px;
+    left: 105px;
+    bottom: 52px;
     background: url("../img/souvenir-icon.png") no-repeat;
 }
 
 .item-white .feature-item-description,
 .item-grey .feature-item-description {
+    width: 285px;
     font-size: 14px;
     line-height: 21px;
     color: #333;
 }
 
 .item-grey {
+    padding-top: 48px;
     padding-bottom: 10px;
     background-color: #eee;
 }
+
+.item-grey .feature-item {}
+
+.item-grey .feature-item-description {}
 
 .item-grey .feature-number {
     color: #333;
@@ -370,7 +386,7 @@ h2 {
 
 .hotel-search-description {
     margin: 0;
-    padding-bottom: 50px;
+    padding-bottom: 47px;
     font-size: 14px;
     line-height: 24px;
     color: #333;
@@ -409,23 +425,23 @@ h2 {
 /*popup form*/
 .modal {
     position: absolute;
-    top: 2240px;
+    top: 2170px;
     left: 50%;
     display: none;
     width: 570px;
     width: 458px;
     margin-left: -285px;
-    padding: 56px 56px 56px 56px;
+    padding: 56px 55px 56px 56px;
     font-weight: 700;
     line-height: 26px;
     background-color: #fff;
 }
 
 .modal input {
-    width: 300px;
+    width: 306px;
     margin-left: 17px;
     padding-top: 3px;
-    padding-right: 30px;
+    padding-right: 26px;
     padding-bottom: 3px;
     padding-left: 10px;
     text-transform: uppercase;
@@ -481,28 +497,34 @@ h2 {
 
 .arrival-date-field,
 .departure-date-field,
-.adults-count-field,
-.child-count-field {
+.adults-count-field
+ {
     position: relative;
     display: block;
-    margin-bottom: 27px;
+    margin-bottom: 31px;
+}
+
+.child-count-field {
+  position: relative;
+  display: block;
+  margin-bottom: 57px;
 }
 
 .arrival-date-field .calendar {
     top: 8px;
-    left: 430px;
+    left: 426px;
 }
 
 .departure-date-field .calendar {
     top: 8px;
-    left: 430px;
+    left: 426px;
 }
 
 .adults-count-field input,
 .child-count-field input {
     width: 37px;
     padding-top: 3px;
-    padding-right: 37px;
+    padding-right: 39px;
     padding-bottom: 3px;
     padding-left: 37px;
     text-align: center;
@@ -517,8 +539,8 @@ h2 {
 }
 
 .btn-plus {
-    top: 5px;
-    left: 204px;
+    top: 7px;
+    left: 201px;
     background-position: -620px -3px;
 }
 
@@ -531,8 +553,8 @@ h2 {
 }
 
 .btn-minus {
-    top: 5px;
-    left: 127px;
+    top: 6px;
+    left: 121px;
     background-position: -525px 2px;
 }
 
@@ -559,7 +581,7 @@ h2 {
 }
 
 .child-count-field label {
-    margin-left: 50px;
+    margin-left: 47px;
 }
 
 .modal .search-button {

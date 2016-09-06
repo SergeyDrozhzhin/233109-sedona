@@ -47,14 +47,15 @@ h2 {
 .main-nav-list {
     font-size: 0;
     list-style: none;
-    width: 480px;
+    /*width: 480px;*/
     margin: 0;
     padding: 0;
 }
 
 .main-nav-list .main-nav-item {
     display: inline-block;
-    width: 240px;
+    width: 235px;
+    padding-right: 7px;
     font-size: 14px;
     line-height: 26px;
     text-align: center;
@@ -100,11 +101,22 @@ h2 {
 .main-nav-right {
     float: right;
 }
+.main-nav-right .main-nav-item {}
+
+.main-nav-left:last-child {
+
+}
+.main-nav-right:last-child {
+
+}
+.main-nav-left:first-child {
+
+}
 
 .header-logo {
     float: left;
     margin-top: 0;
-    margin-left: 50px;
+    margin-left: 45px;
     width: 140px;
     height: 56px;
 }
@@ -116,7 +128,7 @@ h2 {
 
 .footer-area {
     width: 100%;
-    padding-top: 26px;
+    padding-top: 24px;
     padding-bottom: 27px;
     background-color: #ffffff;
 }
@@ -143,7 +155,7 @@ h2 {
 
 .social-btn {
     display: inline-block;
-    width: 46px;
+    width: 45px;
     height: 48px;
     margin: 0 2px;
     margin-top: 9px;
@@ -177,6 +189,7 @@ h2 {
     display: inline-block;
     width: 200px;
     height: 35px;
+    margin-top: 6px;
     margin-right: 93px;
     margin-left: 100px;
     vertical-align: middle;
@@ -293,20 +306,27 @@ h2 {
 }
 
 .item-blue {
+    padding-left: 48px;
+    padding-right: 77px;
     background-color: #81b3d2;
 }
 
 .item-blue .feature-item-description {
-
+    width: 309px;
 }
 
 .item-blue .feature-item-name {
+    width: 164px;
+    padding-left: 72px;
     color: #fff;
+
 }
 
 .item-white {
     padding-top: 163px;
     padding-bottom: 31px;
+    padding-left: 57px;
+    padding-right: 68px;
     background-color: #fff;
 }
 
@@ -315,7 +335,7 @@ h2 {
     position: absolute;
     width: 72px;
     height: 75px;
-    left: 100px;
+    left: 105px;
     bottom: 47px;
     background: url("../img/house-icon.png") no-repeat;
 }
@@ -325,7 +345,7 @@ h2 {
     position: absolute;
     width: 72px;
     height: 75px;
-    left: 100px;
+    left: 105px;
     bottom: 47px;
     background: url("../img/food-icon.png") no-repeat;
 }
@@ -335,9 +355,12 @@ h2 {
     position: absolute;
     width: 72px;
     height: 75px;
-    left: 105px;
+    left: 110px;
     bottom: 52px;
     background: url("../img/souvenir-icon.png") no-repeat;
+}
+.item-white .feature-item-name {
+    padding-left: 64px;
 }
 
 .item-white .feature-item-description,
@@ -351,12 +374,18 @@ h2 {
 .item-grey {
     padding-top: 48px;
     padding-bottom: 10px;
+    padding-right: 63px;
     background-color: #eee;
 }
 
 .item-grey .feature-item {}
 
-.item-grey .feature-item-description {}
+.item-grey .feature-item-description {
+  width: 275px;
+  letter-spacing: 0.3px;
+  padding-left: 0px;
+
+}
 
 .item-grey .feature-number {
     color: #333;
@@ -462,10 +491,12 @@ h2 {
 
 .modal label {
     padding-top: 5px;
+    padding-left: 1px
     text-align: justify;
     font-size: 14px;
     line-height: 26px;
     font-weight: bold;
+    letter-spacing: 0.3px;
 }
 
 .modal-content-show {
@@ -638,9 +669,17 @@ h2 {
 /*catalog.html*/
 .filter-item {
     float: left;
-    width: 300px;
-    padding-top: 10px;
-    padding-bottom: 9px;
+    width: 257px;
+    padding-top: 12px;
+    padding-bottom: 6px;
+}
+
+.type-house {
+
+}
+
+.type-house .hotel-filter-block-title{
+      padding-left: 67px;
 }
 
 .filter-item label {
@@ -672,7 +711,7 @@ input[type="checkbox"] {
 input[type="checkbox"] + label {
     position: relative;
     display: block;
-    margin: 24px 0;
+    margin: 25px 0;
     padding-left: 109px;
     cursor: pointer;
 }
@@ -725,6 +764,7 @@ input[type="checkbox"]:checked:disabled + label::after {
     background-position: -284px -10px;
 }
 
+
 .filter-result {
     display: block;
 }
@@ -747,22 +787,22 @@ input[type="checkbox"]:checked:disabled + label::after {
 
 /*filter-range-header*/
 .price-per-day {
-    padding-top: 10px;
+    padding-top: 12px;
     padding-bottom: 10px;
 }
 
 .filter-range {
     display: block;
-    width: 315px;
+    width: 318px;
     margin: 0px auto;
-    padding-right: 70px;
+    padding-right: 74px;
     color: #ffffff;
     text-transform: uppercase;
 }
 
 .filter-range-title {
     margin-bottom: 9px;
-    margin-left: -11px;
+    margin-left: -9px;
     text-align: left;
     font-weight: 600;
     font-size: 16px;
@@ -771,7 +811,7 @@ input[type="checkbox"]:checked:disabled + label::after {
 
 .price-controls {
     position: relative;
-    height: 30px;
+    height: 33px;
     margin-bottom: 20px;
     font-size: 0;
     border: 2px solid #ffffff;
@@ -802,8 +842,9 @@ input[type="checkbox"]:checked:disabled + label::after {
 
 .price-controls .min-price,
 .price-controls .max-price {
-    width: 90px;
-    padding-left: 40px;
+    width: 112px;
+    padding-left: 35px;
+        padding-top: 6px;
 }
 
 .price-controls input {
@@ -819,7 +860,7 @@ input[type="checkbox"]:checked:disabled + label::after {
 
 .range-controls {
     position: relative;
-    margin-bottom: 32px;
+    margin-bottom: 33px;
 }
 
 .range-controls .scale {
@@ -864,7 +905,8 @@ input[type="checkbox"]:checked:disabled + label::after {
 .btn-transparent {
     display: block;
     margin: 0 auto;
-    padding: 6px 35px;
+    margin-left: 84px;
+    padding: 6px 34px;
     font-size: 14px;
     line-height: 21px;
     color: #ffffff;
@@ -889,16 +931,16 @@ input[type="checkbox"]:checked:disabled + label::after {
 
 .filter-result-sorting li {
     display: inline-block;
-    padding-top: 29px;
-    padding-right: 30px;
+    padding-top: 31px;
+    padding-right: 28px;
     vertical-align: top;
 }
 
 .filter-result-sorting-title {
     margin: 0;
-    margin-left: 44px;
-    padding-top: 34px;
-    padding-right: 30px;
+    margin-left: 48px;
+    padding-top: 36px;
+    padding-right: 41px;
     padding-bottom: 34px;
     font-size: 12px;
     font-weight: 700;
@@ -912,8 +954,12 @@ input[type="checkbox"]:checked:disabled + label::after {
     text-align: left;
     text-decoration: none;
     color: #000;
-    opacity: 0.3;
+
     border-bottom: 1px dotted #81b3d2;
+}
+
+.sorting-item a {
+  opacity: 0.3;
 }
 
 .sorting-item:hover {
@@ -944,6 +990,7 @@ input[type="checkbox"]:checked:disabled + label::after {
     width: 11px;
     height: 10px;
     margin-top: 38px;
+    padding-right: 4px;
     font-size: 0;
     background: url("../img/sprite.png") no-repeat center;
 }
@@ -956,7 +1003,7 @@ input[type="checkbox"]:checked:disabled + label::after {
 .arrow-up {
     top: 5px;
     left: 5px;
-    padding-right: 10px;
+    padding-right: 9px;
     background-position: -134px -10px;
 }
 
@@ -989,7 +1036,7 @@ input[type="checkbox"]:checked:disabled + label::after {
     position: relative;
     float: left;
     padding-top: 26px;
-    padding-bottom: 30px;
+    padding-bottom: 33px;
     padding-left: 70px;
 }
 
@@ -1002,19 +1049,19 @@ input[type="checkbox"]:checked:disabled + label::after {
     width: 100%;
     height: auto;
     display: block;
-    padding-top: 4px;
+    padding-top: 2px;
 }
 
 .filter-result-item .hotel-item {
     display: block;
-    padding-left: 28px;
+    padding-left: 31px;
     text-align: left;
     color: #333;
 }
 
 .hotel-item-name {
-    margin-top: 0px;
-    margin-bottom: 10px;
+    margin-top: -3px;
+    margin-bottom: 7px;
 }
 
 .hotel-item-name a {
@@ -1035,18 +1082,18 @@ input[type="checkbox"]:checked:disabled + label::after {
 .hotel-item-type,
 .hotel-item-price {
     display: block;
-    padding-bottom: 11px;
+    padding-bottom: 14px;
     line-height: 21px;
 }
 
 .hotel-item-col2 {
-    margin-left: 6px;
+    margin-left: 5px;
 }
 
 .btn {
     display: inline-block;
     margin: 0;
-    padding: 2px 16px;
+    padding: 2px 17px;
     text-decoration: none;
     line-height: 21px;
     font-size: 14px;
@@ -1085,12 +1132,13 @@ input[type="checkbox"]:checked:disabled + label::after {
     float: right;
     width: 220px;
     padding-top: 26px;
-    padding-right: 64px;
+    padding-right: 75px;
 }
 
 .rating-stars-icons li {
     display: inline-block;
     margin: 0px;
+    margin-left: 1px;
     vertical-align: top;
     list-style: none;
 }
@@ -1115,8 +1163,8 @@ input[type="checkbox"]:checked:disabled + label::after {
     float: right;
     margin-top: 24px;
     padding-left: 16px;
-    padding-right: 8px;
-    padding-top: 3px;
+    padding-right: 11px;
+    padding-top: 4px;
     padding-bottom: 3px;
     font-size: 14px;
     line-height: 21px;

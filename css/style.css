@@ -28,12 +28,18 @@ h2 {
     color: #000;
 }
 
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .container {
     position: relative;
     width: 1200px;
     margin: 0 auto;
     -webkit-box-shadow:  0px 6px 18px rgba(0,1,1,0.3);
-            box-shadow:  0px 6px 18px rgba(0,1,1,0.3);
+    box-shadow:  0px 6px 18px rgba(0,1,1,0.3);
 }
 
 .page-header {
@@ -197,18 +203,32 @@ h2 {
 
 .copyright-text {
     position: relative;
-    margin-right: 119px;
+    margin-right: 114px;
     vertical-align: middle;
     font-size: 14px;
     color: #000;
 }
 
-.footer-copyright img {
-    width: 113px;
-    position: absolute;
-    margin-left: 5px;
+.copyright-link{
+    padding-left: 5px;
 }
 
+.copyright-link::after{
+    content: "";
+    position: absolute;
+    width: 113px;
+    height: 39px;
+    background-image: url("../img/htmlacademy.png");
+    background-repeat: no-repeat;
+}
+
+.copyright-link:hover::after{
+    background-image: url("../img/htmlacademy-hvr.png");
+}
+
+.copyright-link:hover::active{
+    background-image: url("../img/htmlacademy-down.png");
+}
 
 .left-col {
     float: left;
@@ -299,11 +319,7 @@ h2 {
     overflow: hidden;
 }
 
-.feature-image img{
-    display: block;
-    width: 100%;
-    height: auto;
-}
+
 
 .item-blue {
     padding-left: 48px;
@@ -381,9 +397,9 @@ h2 {
 .item-grey .feature-item {}
 
 .item-grey .feature-item-description {
-  width: 275px;
-  letter-spacing: 0.3px;
-  padding-left: 0px;
+    width: 275px;
+    letter-spacing: 0.3px;
+    padding-left: 0px;
 
 }
 
@@ -499,10 +515,31 @@ h2 {
     letter-spacing: 0.3px;
 }
 
+
+.right-col::-webkit-input-placeholder {
+    color: #000000;
+    opacity: 1;
+}
+
+.right-col::-moz-placeholder {
+    color: #000000;
+    opacity: 1;
+}
+
+.right-col:-ms-input-placeholder {
+    color: #000000;
+    opacity: 1;
+}
+
+.right-col::placeholder {
+    color: #000000;
+    opacity: 1;
+}
+
 .modal-content-show {
     display: block;
     -webkit-animation: view 1s;
-            animation: view 1s;
+    animation: view 1s;
 }
 
 .search-form-group {
@@ -529,26 +566,28 @@ h2 {
 .arrival-date-field,
 .departure-date-field,
 .adults-count-field
- {
+{
     position: relative;
     display: block;
     margin-bottom: 31px;
 }
 
 .child-count-field {
-  position: relative;
-  display: block;
-  margin-bottom: 57px;
+    position: relative;
+    display: block;
+    margin-bottom: 57px;
 }
 
 .arrival-date-field .calendar {
     top: 8px;
     left: 426px;
+    border: none;
 }
 
 .departure-date-field .calendar {
     top: 8px;
     left: 426px;
+    border: none;
 }
 
 .adults-count-field input,
@@ -566,7 +605,9 @@ h2 {
     display: block;
     width: 12px;
     font-size: 0;
+    border: none;
     background: url("../img/sprite.png") no-repeat center;
+
 }
 
 .btn-plus {
@@ -644,25 +685,25 @@ h2 {
 
 /*animation popup search form*/
 @-webkit-keyframes view {
-  0%{
-    opacity: 0;
-}
-50%{
- opacity: 0.5;
-}
-100%{
-    opacity: 1;
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
     }
 }
 @keyframes view {
-  0%{
-    opacity: 0;
-}
-50%{
- opacity: 0.5;
-}
-100%{
-    opacity: 1;
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
     }
 }
 
@@ -679,7 +720,7 @@ h2 {
 }
 
 .type-house .hotel-filter-block-title{
-      padding-left: 67px;
+    padding-left: 67px;
 }
 
 .filter-item label {
@@ -690,6 +731,7 @@ h2 {
 
 .hotel-filter-block-title {
     padding-left: 70px;
+    font-size: 16px;
     line-height: 21px;
     text-align: left;
     color: #fff;
@@ -816,7 +858,7 @@ input[type="checkbox"]:checked:disabled + label::after {
     font-size: 0;
     border: 2px solid #ffffff;
     -webkit-border-radius: 2px;
-            border-radius: 2px;
+    border-radius: 2px;
 }
 
 .price-controls::after {
@@ -828,8 +870,8 @@ input[type="checkbox"]:checked:disabled + label::after {
     height: 22px;
     background: #ffffff;
     -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .price-controls label {
@@ -844,7 +886,7 @@ input[type="checkbox"]:checked:disabled + label::after {
 .price-controls .max-price {
     width: 112px;
     padding-left: 35px;
-        padding-top: 6px;
+    padding-top: 6px;
 }
 
 .price-controls input {
@@ -884,9 +926,9 @@ input[type="checkbox"]:checked:disabled + label::after {
     background: #ababab;
     border: 8px solid #ffffff;
     -webkit-border-radius: 50%;
-            border-radius: 50%;
+    border-radius: 50%;
     -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-            box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
     cursor: pointer;
 }
 
@@ -914,7 +956,7 @@ input[type="checkbox"]:checked:disabled + label::after {
     background: transparent;
     border: 2px solid #ffffff;
     -webkit-border-radius: 2px;
-            border-radius: 2px;
+    border-radius: 2px;
     outline: none;
     cursor: pointer;
 }
